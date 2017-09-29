@@ -9,7 +9,7 @@
 import UIKit
 
 open class WSTagsField: UIScrollView {
-    let textField = BackspaceDetectingTextField()
+    open let textField = BackspaceDetectingTextField()
 
     open override var isFirstResponder: Bool {
         guard super.isFirstResponder == false,
