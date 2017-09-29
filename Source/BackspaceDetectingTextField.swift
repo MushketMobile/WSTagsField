@@ -13,7 +13,7 @@ protocol BackspaceDetectingTextFieldDelegate: UITextFieldDelegate {
     func textFieldDidDeleteBackwards(_ textField: UITextField)
 }
 
-class BackspaceDetectingTextField: UITextField {
+open class BackspaceDetectingTextField: UITextField {
 
     var onDeleteBackwards: (() -> Void)?
 
